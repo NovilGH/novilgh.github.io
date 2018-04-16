@@ -1,0 +1,14 @@
+<div id="map"></div>
+
+<script type="text/javascript">
+	function loadMap() {
+		var map = kartograph.map('#map');
+		map.loadMap('usa.svg', function() {
+			map.addLayer('layer_0');
+		});
+	};
+</script>
+		
+<script src="jquery-3.3.1.min"></script>
+<script src="raphael.min.js"></script>
+<script src="kartograph.js"></script>
