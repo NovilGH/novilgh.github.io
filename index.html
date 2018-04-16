@@ -1,15 +1,23 @@
-Hello Za Warudo!
-<div id="map"></div>
+<head>
+	<title>Kartograph Testing</title>
 
-<script type="text/javascript">
-	function loadMap() {
-		var map = kartograph.map('#map');
-		map.loadMap('france-departments.svg', function() {
-			map.addLayer('layer_0');
-		});
-	};
-</script>
-		
-<script src="jquery-3.3.1.min"></script>
-<script src="raphael.min.js"></script>
-<script src="kartograph.js"></script>
+    <script src="jquery-3.3.1.min"></script>
+	<script src="raphael.min.js"></script>
+	<script src="kartograph.js"></script>
+</head>
+
+<body>
+	<p>Hello Za Warudo!</p>
+	<div id="map"></div>
+
+	<script type="text/javascript">
+		function loadMap() {
+			var map = $K.map('#map', 600, 600);
+			map.loadMap('france-departments.svg', function() {
+				map.addLayer('layer_0');
+			});
+		};
+	</script>
+</body>
+
+
