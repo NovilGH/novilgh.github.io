@@ -11,20 +11,40 @@
 	
 	<script type="text/javascript">
 		$( function() {
-			$( "#draggable" ).draggable();
-		} );
+			$( "#draggable" ).draggable({
+				cursor: "pointer"
+			});
+		});
+
+		function changeInfo(obj, obj_info)
+		{
+			document.getElementById("obj_header").innerHTML=obj;
+			document.getElementById("obj_information").innerHTML=obj_info;
+		}
+		
+		document.oncontextmenu=new Function("return false;")
+		
 	</script>
 	
 </head>
 
 <body>
 	<div class="info">
-		<h1>Test</h1>
+		<h1 id="obj_header">Test</h1>
+		<p id="obj_information">info</p>
 	</div>	
 	
 	<div class="mapview">
 		<div id="draggable" class="map">
-			<img src="Map.png">
+			<img class="NY" src="img/Map.jpg">		
+			
+			<!-- Название -->
+			<img src="img/Point.png"
+				style="left:100px; top:200px;"
+				onclick="changeInfo('Клик', 'Инфо об объекте')"
+			>
+			
+			
 		</div>
 	</div>
 
