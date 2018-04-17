@@ -1,23 +1,15 @@
 <head>
-	<title>Kartograph Testing</title>
-
-    <script src="jquery-3.3.1.min"></script>
-	<script src="raphael.min.js"></script>
-	<script src="kartograph.js"></script>
+	<title>Map Testing</title>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.11.3/jquery-ui.js"></script>
+	
+	<link rel="stylesheet" type="text/css" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/themes/overcast/jquery-ui.css" />
 </head>
 
 <body>
-	<p>Hello Za Warudo!</p>
-	<div id="map"></div>
+	$("Map.png").draggable();
 
-	<script type="text/javascript">
-		function loadMap() {
-			var map = $K.map('#map', 600, 600);
-			map.loadMap("france-departments.svg", function() {
-				map.addLayer('departments');
-			});
-		};
-	</script>
+	<div id="draggable" class="ui-widget-content"></div>
+
 </body>
-
-
