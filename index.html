@@ -1,14 +1,32 @@
+<!doctype html>
+<html lang="ru">
 <head>
+	<meta charset="utf-8">
 	<title>Map Testing</title>
 	
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-	<script src="https://code.jquery.com/ui/1.11.3/jquery-ui.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css" >
 	
-	<link rel="stylesheet" type="text/css" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/themes/overcast/jquery-ui.css" />
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	
+	<script type="text/javascript">
+		$( function() {
+			$( "#draggable" ).draggable();
+		} );
+	</script>
+	
 </head>
 
 <body>
-
-	<div id="draggable" class="ui-widget-content"></div>
+	<div class="info">
+		<h1>Test</h1>
+	</div>	
+	
+	<div class="mapview">
+		<div id="draggable" class="map">
+			<img src="Map.png">
+		</div>
+	</div>
 
 </body>
+</html>
