@@ -1,63 +1,222 @@
-html { overflow: hidden;}
+html {
+	display: block;
+	height: 100%;
+	padding: 0pt;
+	margin: 0pt;
+}
+
+head {
+	display: block;	
+	padding: 0pt;
+	margin: 0pt;
+}
 
 body {
-	padding: 0;
-	margin: 0;
-	position:fixed;
-	width:100%;
-	background-color: #171717;
+	padding: 0pt;
+	margin: 0pt;
+	
+}
+
+
+
+@font-face {
+	font-family: fontawesome;
+	src: url(fonts/fontawesome-webfont.ttf);
+}
+
+@font-face {
+	font-family: opensans;
+	src: url(fonts/opensans-bold.ttf);
+}
+
+
+p {
+	font-family: fontawesome;
+	font-size: 1.5em;
 }
 
 h1 {
-	
+	font-family: opensans;
+	font-size: 3em;	
+	text-align: center;
+	color: white;
+	text-shadow: 1px 1px 2px black;
 }
 
-p {
-	
+h2 {
+	font-family: opensans;
+	font-size: 2em;
+	text-align: center;
+}
+
+h3 {
+	font-family: opensans;
+	font-size: 1.5em;
 }
 
 img {
-	-moz-user-select: none;
-	-webkit-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
+	width: 100%;
 }
 
-#draggable { width: 10px; height: 10px; padding: 0; margin: 0; }
-
-.mapview {
-	z-index: 0;
-	float: left;
+a {
+	font-family: fontawesome;
+	font-weight: bold;
+	text-decoration: none;
+	color: white;
 }
 
-.map{
-	z-index: 1;
-	position: static;
+a:hover {
+	text-decoration: none;
 }
 
-.map img {
+/* Блок для выравнивания содержимого */
+.content {
+	width: 85%;
+	padding: auto;
+	margin: auto;
+}
+
+/* Блок для выравнивания изображений */
+.imgcontainer {
+	width: 48%;
+	border: 0;
+	padding: 1%;
+	margin: 0;
+	float: right;
+}
+
+/* Блок для выравнивания контактных данных */
+.contactcontainer {	
+	width: 20em;
+	padding: 10pt;
+	margin-top: 10%;
+	float: right;
+	background: white;
+	opacity: 0.7;	
+}
+
+.contactcontainer p {	
+	font-weight: bold;
+	margin: 5pt;
+}
+
+.anchor:before {
+	display: block;
+	content: "";
+	height: 3.5em;
+	margin: -3.5em 0 0;
+}
+
+/* Строка меню */
+.header {
+	position: fixed;
+	height: 3.5em;
+	width: 100%;
+	background: #F05E23;
 	padding: 0;
 	margin: 0;
-	position: absolute;
-
+	z-index: 999;
 }
 
-.NY {
-	left:-600px;
-	top:-1000px;
+.header ul {
+	text-align: center;
+	font-size: 1.5em;
+	padding: 0;
+	padding-right: 0;
+	padding-top: 0.5em;
+	height: 100%;
+	margin: 0;
 }
 
-.info { 
-	width: 25%;
-	min-width: 300px;
-	height: 100vh;
-	margin: 0px;
-	padding-left: 10px;
-	position: relative;
-	resize: false;
-	float: right;
-	background: #ffffff;
-	border-left: 2px solid #979797;
-	z-index: 2;
+.header li {
+	list-style: none;
+	display: inline;
+	height: 100%;
+	padding-left: 2vw;
+	padding-right: 2vw;
+	padding-top: 0.8em;
+	padding-bottom: 0.8em;
+}
+.header li:hover {
+	background: #001E3D;
 }
 
+/* Основная панель */
+.mainpage {
+	height: 92vh;
+	min-height: 500px;
+	background: url(img/1.jpg);
+	padding-top: 8.5em;
+	margin-top: 0pt;
+}
+
+/* Изображения */
+.images {
+	min-height: 50vh;
+	padding: 15pt 0;	
+	background: #EAEAEA;
+}	
+
+/* Производство */
+.production {
+	min-height: 50vh;
+	padding-top: 0pt;
+	margin-top: 0pt;	
+}
+
+.production li {
+	list-style-image: url(img/marker.png);	
+	font-size: 22pt;
+	padding-bottom: 5pt;
+}
+
+.production img {	
+	padding: 1%;
+	margin: 0;
+}
+
+.production h1 {	
+	
+}
+
+/* Контактные данные */
+.contacts {
+	height: 200px;
+	padding-top: 10pt;
+	padding-bottom: 5pt;
+	background: #001E3D;
+	color: white;
+}
+
+
+.owl-wrapper-outer {
+	margin: 0;
+	padding: 0;
+	/*border: 1px solid #777;*/
+	border-radius: 5px;
+	overflow: hidden;	
+}
+/* 1 квадратик карусели */
+.carousel-element {
+	margin: 0;
+	padding: 0;
+	/*border-right: 1px solid #777; */
+}
+/* Блок с точками */
+.owl-pagination {
+	text-align: center;
+}
+/* 1 Точка */
+.owl-page {
+	width: 10px;
+	height: 10px;
+	border: 1px solid #F05E23;
+	display: inline-block;
+	background: white;
+	margin: 10px;
+	border-radius: 5px;
+}
+/* Активная точка */
+.owl-page.active {
+	background: #F05E23;
+}

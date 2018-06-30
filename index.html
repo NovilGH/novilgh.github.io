@@ -2,51 +2,94 @@
 <html lang="ru">
 <head>
 	<meta charset="utf-8">
-	<title>Map Testing</title>
+	<title>Мебельный одностраничник</title>
 	
-	<link rel="stylesheet" type="text/css" href="style.css" >
-	
-	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-	
-	<script type="text/javascript">
-		$( function() {
-			$( "#draggable" ).draggable({
-				cursor: "pointer"
-			});
+	<link rel="shortcut icon" href="img/logo.ico" >	
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="js/owl-carousel/owl.carousel.css"/>
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/owl-carousel/owl.carousel.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			// Запуск Совиной Карусели
+			var carousel = $("#carousel");			
+			carousel.owlCarousel({	items: 2,
+									itemsDesktop: [1400, 2], 
+									itemsDesktopSmall: [700, 1],
+									itemsTablet:       false,									
+									itemsMobile:       false,
+									pagination: true});
 		});
-
-		function changeInfo(obj, obj_info)
-		{
-			document.getElementById("obj_header").innerHTML=obj;
-			document.getElementById("obj_information").innerHTML=obj_info;
-		}
-		
-		document.oncontextmenu=new Function("return false;")
-		
 	</script>
-	
 </head>
 
 <body>
-	<div class="info">
-		<h1 id="obj_header">Test</h1>
-		<p id="obj_information">info</p>
-	</div>	
+	<div class="header">
+		<ul>
+			<li><a href="#main">Главная</a></li>
+			<li><a href="#images">Фотографии</a></li>
+			<li><a href="#production">Производство</a></li>
+			<li><a href="#contacts">Контакты</a></li>
+		</ul>
+	</div>
 	
-	<div class="mapview">
-		<div id="draggable" class="map">
-			<img class="NY" src="img/Map.jpg">		
-			
-			<!-- Название -->
-			<img src="img/Point.png"
-				style="left:100px; top:200px;"
-				onclick="changeInfo('Клик', 'Инфо об объекте')"
-			>
-			
-			
+	<div class="mainpage">
+		<div class="content">
+			<a class="anchor" name="main"></a>	
+			<h1>МЕБЕЛЬ ДЛЯ ОФИСА И ДОМА</h1>
+			<div class="contactcontainer">
+				<p>Телефон:</p>
+				<p>+1(234)56-78-90</p>
+				<br>
+				<p>Электронный адрес:</p>
+				<p>12345678@avk-group.pro</p>
+			</div>
 		</div>
 	</div>
 
+	<div class="images">
+		<a class="anchor" name="images"></a>
+		<div class="content">
+			<div id="carousel">
+				<div class="carousel-element"><img src="img/glr-1.jpg"></div>
+				<div class="carousel-element"><img src="img/glr-2.jpg"></div>
+				<div class="carousel-element"><img src="img/glr-3.jpg"></div>
+				<div class="carousel-element"><img src="img/glr-4.jpg"></div>
+				<div class="carousel-element"><img src="img/glr-5.jpg"></div>
+			</div>
+		
+			<h3>Обставляем квартиры и офисы под ключ.</h3>
+			<h3>Хотите работать без посредников - тогда вам к нам.</h3>
+		</div>
+	</div>
+	
+	<div class="production">
+		<a class="anchor" name="production"></a>
+		<div class="content">
+			<h1>Производство мебели по Вашему заказу</h1>
+			<div class="imgcontainer"><img src="img/prod-1.jpg" alt="Производство мебели"></div>
+			<div class="imgcontainer"><img src="img/prod-2.jpg" alt="Мебельные станки"></div>
+			<h3>Домашняя и офисная мебель по стандартным размерам и по вашему заказу</h3>
+			<h2>Регламент работы</h2>
+			<ul>
+				<li>От вас звонок с заявкой</li>
+				<li>Выезжаем на замеры и консультацию (в городах Екатеринбург и Каменск-Уральский выезд на замеры - БЕСПЛАТНО)</li>
+				<li>Изготавливаем эскизы на согласование</li>
+				<li>Подбираем материалы для изготовления (цвета, производитель, комплектация и т.д.)</li>
+				<li>Согласовываем стоимость</li>
+				<li>Производим мебель</li>
+				<li>Доставляем</li>
+				<li>Сборка мебели</li>
+			</ul>
+			<p>Производим недорогую и качественную мебель: кухни, шкафы-купе, столы, шкафы для одежды и документов, тумбы, офисные стойки и т.п.</p>
+		</div>
+	</div>
+	
+	<div class="contacts">
+		<a class="anchor" name="contacts"></a>
+		<div class="content">
+			<h2>Контактные данные</h2>
+		</div>
+	</div>
 </body>
 </html>
