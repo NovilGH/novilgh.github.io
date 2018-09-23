@@ -93,7 +93,7 @@ a:hover {
 .contactcontainer {	
 	width: 20em;
 	padding: 10pt;
-	margin-top: 0%;
+	margin-top: 5vw;
 	float: right;
 	background: white;
 	opacity: 0.7;	
@@ -166,7 +166,8 @@ a:hover {
 /* Основная панель */
 .mainpage {
 	height: 92vh;
-	min-height: 500px;
+	
+	max-height: 100vw;
 	background: url(img/1.jpg);
 	padding-top: 8.5em;
 	margin-top: 0pt;
