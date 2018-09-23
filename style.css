@@ -19,6 +19,7 @@ body {
 }
 
 
+/* Шрифты */
 
 @font-face {
 	font-family: fontawesome;
@@ -74,6 +75,7 @@ a:hover {
 }
 
 /* Блок для выравнивания содержимого */
+
 .content {
 	width: 85%;
 	padding: auto;
@@ -81,6 +83,7 @@ a:hover {
 }
 
 /* Блок для выравнивания изображений */
+
 .imgcontainer {
 	width: 48%;
 	border: 0;
@@ -90,10 +93,11 @@ a:hover {
 }
 
 /* Блок для выравнивания контактных данных */
+
 .contactcontainer {	
 	width: 20em;
 	padding: 10pt;
-	margin-top: 5vw;
+	margin-top: 2vw;
 	float: right;
 	background: white;
 	opacity: 0.7;	
@@ -112,6 +116,7 @@ a:hover {
 }
 
 /* Строка меню */
+
 .header {
 	position: fixed;
 	height: 3.5em;
@@ -164,16 +169,18 @@ a:hover {
 }
 
 /* Основная панель */
+
 .mainpage {
 	height: 92vh;
 	
 	max-height: 100vw;
-	background: url(img/1.jpg);
+	background: url(img/main.jpg);
 	padding-top: 8.5em;
 	margin-top: 0pt;
 }
 
 /* Изображения */
+
 .images {
 	min-height: 50vh;
 	padding: 15pt 0;	
@@ -181,6 +188,7 @@ a:hover {
 }	
 
 /* Производство */
+
 .production {
 	min-height: 50vh;
 	padding-top: 0pt;
@@ -203,6 +211,7 @@ a:hover {
 }
 
 /* Контактные данные */
+
 .contacts {
 	height: 250px;
 	padding-top: 10pt;
@@ -215,6 +224,7 @@ a:hover {
 	margin: 5pt;
 }
 
+/* Карусель */
 
 .owl-wrapper-outer {
 	margin: 0;
@@ -243,7 +253,6 @@ a:hover {
 	margin: 10px;
 	border-radius: 5px;
 }
-/* Активная точка */
 .owl-page.active {
 	background: #F05E23;
 }

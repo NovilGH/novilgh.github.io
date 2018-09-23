@@ -12,8 +12,16 @@
 	<script>
 		$(document).ready(function(){
 			// Запуск Совиной Карусели
-			var carousel = $("#carousel");			
-			carousel.owlCarousel({	items: 2,
+			var carousel1 = $("#carousel1");
+			carousel1.owlCarousel({	items: 2,
+									itemsDesktop: [1400, 2], 
+									itemsDesktopSmall: [1000, 1],
+									itemsTablet:       false,									
+									itemsMobile:       false,
+									pagination: true});
+									
+			var carousel2 = $("#carousel2");
+			carousel2.owlCarousel({	items: 2,
 									itemsDesktop: [1400, 2], 
 									itemsDesktopSmall: [1000, 1],
 									itemsTablet:       false,									
@@ -26,7 +34,7 @@
 <body>
 	<div class="header">
 		<img src="img/logo.ico">
-		<a class="phone">+1(234)56-78-90</a>
+		<a class="phone">+7(965)316-70-07</a>
 		<ul>
 			<li><a href="#main">Главная</a></li>
 			<li><a href="#images">Фотографии</a></li>
@@ -41,10 +49,10 @@
 			<h1>МЕБЕЛЬ ДЛЯ ОФИСА И ДОМА</h1>
 			<div class="contactcontainer">
 				<p>Телефон:</p>
-				<p>+1(234)56-78-90</p>
+				<p>+7(965)316-70-07</p>
 				<br>
-				<p>Электронный адрес:</p>
-				<p>12345678@avk-group.pro</p>
+				<p>Эл. почта:</p>
+				<p>info@avk1.ru</p>
 			</div>
 		</div>
 	</div>
@@ -52,12 +60,14 @@
 	<div class="images">
 		<a class="anchor" name="images"></a>
 		<div class="content">
-			<div id="carousel">
-				<div class="carousel-element"><img src="img/glr-1.jpg"></div>
-				<div class="carousel-element"><img src="img/glr-2.jpg"></div>
-				<div class="carousel-element"><img src="img/glr-3.jpg"></div>
-				<div class="carousel-element"><img src="img/glr-4.jpg"></div>
-				<div class="carousel-element"><img src="img/glr-5.jpg"></div>
+			<div id="carousel1">
+				<div class="carousel-element"><img src="img/g-1.jpg"></div>
+				<div class="carousel-element"><img src="img/g-2.jpg"></div>
+				<div class="carousel-element"><img src="img/g-3.jpg"></div>
+				<div class="carousel-element"><img src="img/g-4.jpg"></div>
+				<div class="carousel-element"><img src="img/g-5.jpg"></div>
+				<div class="carousel-element"><img src="img/g-6.jpg"></div>
+				<div class="carousel-element"><img src="img/g-7.jpg"></div>
 			</div>
 		
 			<p>Производим "под ключ" недорогую качественную мебель в квартиры, дачи и офисы.</p>
@@ -65,6 +75,16 @@
 			<p>Опыт работы с частными лицами и организациями, зарекомендовали себя положительными отзывами</p>
 			<p>Домашняя и офисная мебель по стандартным размерам и Вашим предпочтениям</p>
 			<p>Хотите работать без переплат и посредников - тогда Вам к нам.</p>
+			
+			<div id="carousel2">
+				<div class="carousel-element"><img src="img/g-8.jpg"></div>
+				<div class="carousel-element"><img src="img/g-9.jpg"></div>
+				<div class="carousel-element"><img src="img/g-10.jpg"></div>
+				<div class="carousel-element"><img src="img/g-11.jpg"></div>
+				<div class="carousel-element"><img src="img/g-12.jpg"></div>
+				<div class="carousel-element"><img src="img/g-13.jpg"></div>
+				<div class="carousel-element"><img src="img/g-14.jpg"></div>
+			</div>
 		</div>
 	</div>
 	
