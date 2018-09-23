@@ -3,7 +3,7 @@ html {
 	height: 100%;
 	padding: 0pt;
 	margin: 0pt;
-	font-size: 1.5vw;
+	font-size: calc(7px + .5vw);
 }
 
 head {
@@ -33,7 +33,7 @@ body {
 
 p {
 	font-family: fontawesome;
-	font-size: 1.25em;
+	font-size: 1.6em;
 }
 
 h1 {
@@ -45,14 +45,17 @@ h1 {
 }
 
 h2 {
+	margin-top: 20pt;
 	font-family: opensans;
 	font-size: 2em;
 	text-align: center;
+	text-shadow: 1px 1px 2px gray;
 }
 
 h3 {
 	font-family: opensans;
 	font-size: 1.5em;
+	text-align: center;
 }
 
 img {
@@ -117,6 +120,7 @@ a:hover {
 	padding: 0;
 	margin: 0;
 	z-index: 999;
+
 }
 
 .header ul {
@@ -146,13 +150,17 @@ a:hover {
 .header img {
 	float: left;
 	height: 100%;
-	width: 10vh;
+	width: 4em;
 	padding: 0 5% 0 15%;
 	margin: 0;
 }
 
 .phone {
 	float:right;
+	font-size: 1.5em;
+	padding-left: 2vw;
+	padding-right: 4vw;
+	padding-top: 0.5em;
 }
 
 /* Основная панель */
@@ -195,11 +203,15 @@ a:hover {
 
 /* Контактные данные */
 .contacts {
-	height: 500px;
+	height: 250px;
 	padding-top: 10pt;
 	padding-bottom: 5pt;
 	background: #001E3D;
 	color: white;
+}
+
+.contacts p {
+	margin: 5pt;
 }
 
 
