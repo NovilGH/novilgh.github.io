@@ -47,9 +47,10 @@ h1 {
 
 h2 {
 	margin-top: 20pt;
+	margin-bottom: 3pt;
 	font-family: opensans;
 	font-size: 2em;
-	text-align: center;
+	text-align: left;
 	text-shadow: 1px 1px 2px gray;
 }
 
@@ -57,6 +58,11 @@ h3 {
 	font-family: opensans;
 	font-size: 1.5em;
 	text-align: center;
+}
+
+li {
+	font-family: fontawesome;
+	font-size: 1.6em;
 }
 
 img {
@@ -114,6 +120,13 @@ a:hover {
 	height: 3.5em;
 	margin: -3.5em 0 0;
 }
+
+.titlebg {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
 
 /* Строка меню */
 
